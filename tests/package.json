@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "apickli": "latest"
+  },
+  "devDependencies": {
+    "gulp-apimocker": "^0.1.0",
+    "gulp-nodeunit-runner": "^0.2.2",
+    "gulp-rimraf": "^0.2.2",
+    "gulp": "latest"
+  }
+}

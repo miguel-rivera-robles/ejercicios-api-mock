@@ -1,0 +1,17 @@
+{
+    "mensaje": "Operacion Exitosa",
+    "codigo": "201",
+    "detalles": {
+        "idCliente": "1",
+        "nombre": "Jesus",
+        "apellidoPaterno":"Tovar",
+        "apellidoMaterno": "Lerma",
+        "edad": 34,
+        "rfc": "CURP870813HMZRSV21",
+        "email": "api.microservices@proyectogenesis.com",
+        "direccion": "Privada Opalo Num 41, Zacatecas",
+        "codigoPostal": "98605",
+        "referencias": "Cerca Jacaranda junto tienda",
+        "genero": "M"
+    }
+}

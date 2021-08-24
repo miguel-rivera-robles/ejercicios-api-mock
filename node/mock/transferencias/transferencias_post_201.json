@@ -1,0 +1,12 @@
+{
+    "mensaje": "Transferencia Exitosa",
+    "codigo": "201",
+    "detalles": {
+        "idCliente": "1",
+        "cuentaEmisora": 5236237,
+        "cuentaBeneficiaria" :542356,
+        "montoOperecion":"4567",
+        "fechaOperacion":"23/08/2021"
+
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "mockDirectory": "../node/mock",
+    "quiet": false,
+    "port": "8000",
+    "latency": 50,
+    "logRequestHeaders": false,
+    "webServices": {
+       "first": {
+            "mockFile": "ejemplo/ejemplo.json",
+            "latency": 20,
+            "verbs": ["get"],
+            "alternatePaths": ["1st"]
+          },
+        "clientes/v1": {
+          "latency": 10,
+          "verbs":[
+            "POST"
+          ],
+          "switch": [
+            "$.nombre"
+          ],
+          "responses": {
+            "post": {
+              "httpStatus": 400,
+              "mockFile": "clientes/clientes_400.json"
+            }
+          },
+          "switchResponses": {
+            "$.nombreJesus":{"httpStatus":201, "mockFile": "clientes/clientes_post_201.json"}
+          }
+        },
+        "transferencias/v1": {
+          "latency": 10,
+          "verbs":[
+            "POST"
+          ],
+          "switch": [
+            "$.idCliente"
+          ],
+          "responses": {
+            "post": {
+              "httpStatus": 400,
+              "mockFile": "transferencias/transferencias_401.json"
+            }
+          },
+          "switchResponses": {
+            "$.idCliente245":{"httpStatus":201, "mockFile": "transferencias/transferencias_post_201.json"}
+          }
+        }
+
+    }
+}

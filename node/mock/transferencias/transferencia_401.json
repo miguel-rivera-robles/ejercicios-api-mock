@@ -1,0 +1,6 @@
+{
+    "codigo": "401.api_transferencias",
+    "mensaje": "El cliente no tiene autorizacion",
+    "inromfacion": "Debes introducir correctamente los datos",
+    "tracking": "562346"
+}
